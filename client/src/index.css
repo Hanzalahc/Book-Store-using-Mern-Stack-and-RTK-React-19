@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ::-webkit-scrollbar {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff5252 !important;
+  border-radius: 0.25rem !important;
+} */
+
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+
+/* Css Media Quries */
+@media (max-width: 100px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 200px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 299px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1279px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3070px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 3071px) and (max-width: 3839px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 6.25rem;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 0.0625rem solid black;
+  text-decoration: none;
+  padding: 0.625rem;
+  margin-top: 1rem;
+}
+
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
