@@ -193,8 +193,8 @@ You need to create .env files for both the **client** and **server** projects. F
 3.  Add the following variables to the .env file:
     
     PORT=8000
-    MONGODB_URI=mongodb://localhost:27017
-    CORS_ORIGIN=http://localhost:5173
+    MONGODB_URI=
+    CORS_ORIGIN=
     JWT_SECRET=
     JWT_ACCESS_EXPIRY=1d
     JWT_REFRESH_EXPIRY=7d
