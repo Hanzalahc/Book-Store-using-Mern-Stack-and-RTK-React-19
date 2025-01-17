@@ -1,51 +1,70 @@
-# Book Store using Mern Stack and RTK | React 19
+# Book Store using Mern Stack, Firebase and RTK | React 19
 
 Frontend
-Description
-This project is a Bookstore application built using the MUNSTACK architecture. The application allows users to browse books, add them to the cart, update cart quantities, and place orders. Users need to be logged in to access the checkout and order management features. The project emphasizes state management, API handling, and responsive design.
+--------
 
-Features
-Authentication:
+### Features
 
-Handled via Firebase (email/password login and Google Sign-In).
-Users must log in to place orders or access the checkout page.
-Cart Management:
+1.  **User Authentication**: Handled by Firebase, ensuring secure user login and registration.
+    
+2.  **State Management**: Managed with Redux Toolkit, enabling efficient state handling.
+    
+3.  **Styling**: Tailwind CSS is used for responsive and modern styling.
+    
+4.  **Core Functionality**:
+    
+    *   Display a collection of books fetched from the backend.
+        
+    *   Add books to a cart with functionality to update or remove items.
+        
+    *   Access the checkout process (only for logged-in users).
+        
+    *   View order history on the user dashboard or orders page.
+        
 
-Add books to the cart.
-Update cart quantities or remove books.
-Checkout and place orders.
-Orders:
+### Technologies Used
 
-View order history on the user dashboard.
-Custom Hooks:
+*   **React Router DOM**: For navigation and routing.
+    
+*   **Redux Toolkit**: To manage application state efficiently.
+    
+*   **Redux Persist**: To persist state across sessions.
+    
+*   **Axios**: For API calls.
+    
+*   **Firebase**: For authentication.
+    
+*   **Chart.js** and **React Chart.js 2**: To visualize data in charts.
+    
+*   **React Hook Form**: For form handling and validations.
+    
+*   **MUI (Material-UI)**: For reusable components.
+    
+*   **Swiper**: For interactive carousels.
+    
+*   **React Icons**: For a variety of icons.
+    
+*   **React Hot Toast**: For notification toasts.
+    
 
-useApiProvider: Provides general API descriptions and utilities for files.
-useReduxHooks: Contains all store-related actions and selectors.
-useApiSubmit: Handles API calls using Axios, interacting with a utility file httpActions.js.
-Folder Structure Highlights
-API Management:
+### Custom Hooks
 
-API routes and methods are declared in the api.js file located in the api folder.
-API calls are executed via utility methods for modular and reusable code.
-Redux Toolkit:
+1.  **useProvideAPI**: A utility hook that provides general API details and configurations used across the application.
+    
+2.  **useRedux**: Centralized hook to access Redux stores and actions.
+    
+3.  **useAPISubmit**: Handles API calls via Axios, utilizing httpactions.js for utility functions.
+    
 
-Includes slices for:
-Admin
-Auth
-Cart
-These slices are used throughout the project for state management.
-Technologies Used
-React.js
-Redux Toolkit
-Firebase
-Axios
-Tailwind CSS
-MUI (Material-UI)
-React Router DOM
-Chart.js
-React Chart.js 2
-React Hook Form (with validation)
-React Hot Toast
-React Icons
-React Redux Persist
-Swiper
+### API and Redux
+
+*   API routes and methods are declared in the api.js file within the API folder.
+    
+*   The Redux Toolkit manages the application's slices, including:
+    
+    *   **Admin Slice**: Admin-specific state management.
+        
+    *   **Auth Slice**: Handles user authentication state.
+        
+    *   **Card Slice**: Manages cart-related operations.
+ 
