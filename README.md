@@ -67,8 +67,9 @@ Frontend
     *   **Auth Slice**: Handles user authentication state.
         
     *   **Card Slice**: Manages cart-related operations.
+
 Backend
--------
+--------
 
 ### Description
 
@@ -177,11 +178,11 @@ You need to create .env files for both the **client** and **server** projects. F
 3.  Add the Firebase configuration provided by Google Firebase. Once you create a Firebase project, you will receive the necessary credentials to paste here.
 4.  Add the following variables to the .env file:
    VITE_FIREBASE_API_KEY=
-VITE_FIREBASE_AUTH_DOMAIN=
-VITE_FIREBASE_PROJECT_ID=
-VITE_FIREBASE_STORAGE_BUCKET=
-VITE_FIREBASE_MESSAGING_SENDER_ID=
-VITE_FIREBASE_APP_ID=
+   VITE_FIREBASE_AUTH_DOMAIN=
+   VITE_FIREBASE_PROJECT_ID=
+   VITE_FIREBASE_STORAGE_BUCKET=
+   VITE_FIREBASE_MESSAGING_SENDER_ID=
+   VITE_FIREBASE_APP_ID=
     
 #### **Server (Back-End)**:
 
@@ -192,19 +193,19 @@ VITE_FIREBASE_APP_ID=
 3.  Add the following variables to the .env file:
     
     PORT=8000
-MONGODB_URI=mongodb://localhost:27017
-CORS_ORIGIN=http://localhost:5173
-JWT_SECRET=
-JWT_ACCESS_EXPIRY=1d
-JWT_REFRESH_EXPIRY=7d
-JWT_PASS_EXPIRY=5m
-NODE_ENV=development
-NODE_SS=lax
+    MONGODB_URI=mongodb://localhost:27017
+    CORS_ORIGIN=http://localhost:5173
+    JWT_SECRET=
+    JWT_ACCESS_EXPIRY=1d
+    JWT_REFRESH_EXPIRY=7d
+    JWT_PASS_EXPIRY=5m
+    NODE_ENV=development
+    NODE_SS=lax
 
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
-CLOUDINARY_FOLDER=
+    CLOUDINARY_CLOUD_NAME=
+    CLOUDINARY_API_KEY=
+    CLOUDINARY_API_SECRET=
+    CLOUDINARY_FOLDER=
 
 ### 4\. Install Dependencies
 
@@ -212,11 +213,11 @@ Open two terminal windows and navigate into the client and server directories re
 
 #### For the Client:
 
-  npm install  
+  `npm install`  
 
 #### For the Server:
 
- npm install  
+` npm install ` 
 
 If you don’t have npm installed, download and install the **Node.js LTS version** first.
 
